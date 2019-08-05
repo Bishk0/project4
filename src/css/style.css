@@ -1,0 +1,904 @@
+@font-face {
+  font-family: 'GLYPHICONS Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.svg");
+}
+
+.fixed__nav {
+  position: fixed;
+  z-index: 5;
+  margin-top: -33px;
+  top: 50%;
+  right: 20px;
+  width: 10px;
+}
+
+.fixed__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fixed__nav ul li {
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.fixed__nav ul li a {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #e2e2e2;
+  position: relative;
+}
+
+.fixed__nav ul li a:hover {
+  background: #afafaf;
+  transition: 0.3s;
+}
+
+.fixed__nav ul li a:hover:after {
+  position: absolute;
+  content: attr(data-title);
+  background: #313244;
+  color: #EBECED;
+  right: 20px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-size: 12px;
+  top: -5px;
+}
+
+.fixed__nav ul li a:hover:before {
+  position: absolute;
+  content: '';
+  border: 5px solid transparent;
+  border-left: 5px solid #313244;
+  right: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: url("../img/bg-1.png") no-repeat 0 0/cover;
+  min-height: auto;
+  padding: 100px 0;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+}
+
+.header__content {
+  max-width: 566px;
+  width: 100% !important;
+  padding: 0 15px;
+}
+
+.header__title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.header__title h1 {
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.header__text {
+  text-align: center;
+}
+
+.header__text span {
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  line-height: 1.4;
+}
+
+.header__img {
+  max-width: 404px;
+  text-align: center;
+  width: 100%;
+}
+
+.header__img figure {
+  margin: 0;
+}
+
+.header__img img {
+  max-width: 320px !important;
+  max-height: 547px;
+  margin: 0;
+}
+
+.header__btn {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.header__btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #dc554f;
+  width: 180px;
+  height: 54px;
+  margin: 0 auto;
+}
+
+.header__btn a:hover {
+  background: #cf3029;
+  transition: 0.5s;
+}
+
+.header__btn a img {
+  width: 180px;
+  height: 54px;
+}
+
+.services {
+  padding: 100px 0;
+}
+
+.services__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 294px;
+}
+
+.services__content:last-child {
+  position: relative;
+  top: -3px;
+}
+
+.services__content .services__img {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.services__content .services__img img {
+  width: 80px;
+  height: auto;
+}
+
+.services__content .services__title h4 {
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  margin: 12px 0;
+  font-size: 22px;
+  color: #1b1f23;
+  font-weight: 500;
+}
+
+.services__content .services__text span {
+  font-size: 17px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  margin-bottom: 12px;
+  color: #696f6f;
+  line-height: 1.4;
+}
+
+.features {
+  background: #F3F4F5;
+  padding: 100px 0;
+}
+
+.features__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.features__inner-reverse {
+  flex-direction: row-reverse;
+}
+
+.features__content {
+  padding-top: 100px;
+  max-width: 566px;
+}
+
+.features__content .features__title {
+  max-width: 536px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.features__content .features__title span {
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  color: #1b1f23;
+}
+
+.features__content .features__text {
+  max-width: 482px;
+  margin-bottom: 12px;
+}
+
+.features__content .features__text span {
+  color: #696f6f;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.features__img {
+  max-width: 374px;
+  text-align: center;
+}
+
+.features__img img {
+  max-width: 320px;
+  height: auto;
+}
+
+.features__btn .features__btn1 {
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  width: auto;
+  text-align: center;
+  padding: 10px 23px;
+  background: #dc554f;
+  border-radius: 4px;
+  border: 2px solid #dc554f;
+  font-size: 18px;
+}
+
+.features__btn .features__btn1:hover {
+  background: #cf3029;
+  border: 2px solid #cf3029;
+  transition: 0.5s;
+}
+
+.features__btn .features__btn2-1 {
+  text-align: center;
+  padding: 10px 23px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  text-decoration: none;
+  margin-right: 13px;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  background: #dc554f;
+  border-radius: 4px;
+  border: 2px solid #dc554f;
+}
+
+.features__btn .features__btn2-1:hover {
+  background: #cf3029;
+  border: 2px solid #cf3029;
+  transition: 0.5s;
+}
+
+.features__btn .features__btn2-2 {
+  text-decoration: none;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  display: block;
+  padding: 10px 23px;
+  background: transparent;
+  color: #dc554f;
+  font-size: 18px;
+  border: 2px solid #dc554f;
+  border-radius: 4px;
+}
+
+.features__btn .features__btn2-2:hover {
+  background: #cf3029;
+  color: #fff;
+  border: 2px solid #cf3029;
+  transition: 0.5s;
+}
+
+.features__btn .features__btn3 {
+  display: block;
+  background: #dc554f;
+  text-align: center;
+  border-radius: 4px;
+  width: 180px;
+  height: 54px;
+}
+
+.features__btn .features__btn3 img {
+  width: 180px;
+  height: 54px;
+}
+
+.features__btn .features__btn3:hover {
+  background: #cf3029;
+  transition: 0.5s;
+}
+
+.features__btn-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.features__img-top1 {
+  position: relative;
+  top: -40px;
+}
+
+.features__img-top2 {
+  position: relative;
+  top: -80px;
+}
+
+.subscribe {
+  background: url("../img/bg-2.png") no-repeat center/cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.subscribe form {
+  padding: 20px 0;
+}
+
+.subscribe form button {
+  color: white;
+  background-color: #00b6ad;
+  border: 2px solid #00b6ad;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 10px 23px;
+  height: 45px;
+}
+
+.subscribe form button:hover {
+  background-color: #00837d;
+  border: 2px solid #00837d;
+  transition: 0.5s;
+}
+
+.subscribe form input {
+  height: 41px;
+  max-width: 300px;
+  margin-right: 3px;
+  padding: 0 12px;
+  font-size: 18px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  color: #696f6f;
+  background: #fff;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+}
+
+.subscribe__title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.subscribe__title span {
+  font-size: 36px;
+  color: #fff;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-weight: 500;
+}
+
+.subscribe__text {
+  margin-bottom: 12px;
+}
+
+.subscribe__text span {
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  color: #696f6f;
+  font-size: 15px;
+}
+
+.footer__bold-text {
+  font-weight: bold;
+}
+
+.icon-heart {
+  color: #FD487D;
+}
+
+.footer__content span a {
+  color: #00b6ad;
+  text-decoration: none;
+}
+
+.footer__content span a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.footer__content div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer__content div a {
+  font-size: 23px;
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.footer__twitter {
+  background: #53c3ee;
+}
+
+.footer__twitter:hover {
+  background: #16A7DF;
+  transition: 0.5s;
+}
+
+.footer__facebook {
+  background: #5975b1;
+  margin: 0 10px;
+}
+
+.footer__facebook:hover {
+  background: #3D5281;
+  transition: 0.5s;
+}
+
+.footer__pinterest {
+  background: #d54e55;
+}
+
+.footer__pinterest:hover {
+  background: #AD2930;
+  transition: 0.5s;
+}
+
+.sign-in {
+  background: url("../img/bg-1.png") no-repeat center/cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.sign-in__bloc {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.sign-in__bloc a {
+  color: #00b6ad;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+.sign-in__bloc a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+  color: #006a64;
+}
+
+.sign-in__logo {
+  margin-bottom: 30px;
+}
+
+.sign-in__content {
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.sign-in__content .sign-in__title {
+  margin: 12px 0;
+}
+
+.sign-in__content span {
+  font-size: 22px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-weight: 500;
+  color: #1b1f23;
+}
+
+.sign-in__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+.sign-in__form input {
+  margin-bottom: 15px;
+  height: 41px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  color: #696f6f;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+.sign-in__btn {
+  background: #00b6ad;
+  border: 2px solid #00b6ad !important;
+  color: #fff !important;
+  font-size: 18px;
+  height: 45px !important;
+}
+
+.sign-in__btn:hover {
+  background: #00837d;
+  border: 2px solid #00837d !important;
+  transition: 0.5s;
+}
+
+.sign-in__text {
+  font-size: 17px !important;
+  text-align: center;
+  color: #fff;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+.sign-up {
+  background: url("../img/bg-1.png") no-repeat center/cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.sign-up a {
+  text-decoration: none;
+  color: #00b6ad;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+  color: #006a64;
+  transition: 0.5s;
+}
+
+.sign-up__logo {
+  margin-bottom: 30px;
+}
+
+.sign-up__content {
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.sign-up__content .sign-up__title {
+  margin: 12px 0;
+}
+
+.sign-up__content span {
+  font-size: 22px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-weight: 500;
+  color: #1b1f23;
+}
+
+.sign-up__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+.sign-up__form input {
+  margin-bottom: 15px;
+  height: 41px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  color: #696f6f;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+.sign-up__btn {
+  background: #00b6ad;
+  border: 2px solid #00b6ad !important;
+  color: #fff !important;
+  font-size: 18px;
+  height: 45px !important;
+}
+
+.sign-up__btn:hover {
+  background: #00837d;
+  border: 2px solid #00837d !important;
+  transition: 0.5s;
+}
+
+.sign-up__text {
+  font-size: 17px !important;
+  text-align: center;
+  color: #fff;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+.sign-up__bloc {
+  margin-top: 7px;
+}
+
+.sign-up__bloc span {
+  font-size: 17px;
+}
+
+.forgot-password {
+  background: url("../img/bg-1.png") no-repeat center/cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.fg-psw__logo {
+  margin-bottom: 30px;
+}
+
+.fg-psw__content {
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.fg-psw__content .fg-psw__title {
+  margin: 12px 0;
+}
+
+.fg-psw__content span {
+  font-size: 22px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  font-weight: 500;
+  color: #1b1f23;
+}
+
+.fg-psw__describe {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.fg-psw__describe span {
+  font-size: 17px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+  color: #696f6f;
+  line-height: 1.4;
+}
+
+.fg-psw__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.fg-psw__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+.fg-psw__form input {
+  margin-bottom: 15px;
+  height: 41px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  color: #696f6f;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+.fg-psw__btn {
+  background: #00b6ad;
+  border: 2px solid #00b6ad !important;
+  color: #fff !important;
+  font-size: 18px;
+  height: 45px !important;
+}
+
+.fg-psw__btn:hover {
+  background: #00837d;
+  border: 2px solid #00837d !important;
+  transition: 0.5s;
+}
+
+.fg-psw__text {
+  font-size: 17px !important;
+  text-align: center;
+  color: #fff;
+  font-family: "GLYPHICONS Halflings", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding: 50px 0;
+  }
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__inner .services__content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__inner .footer__content {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__title h1 {
+    font-size: 40px;
+  }
+  .header__text span {
+    font-size: 18px;
+  }
+  .services {
+    padding: 50px 0;
+  }
+  .subscribe {
+    padding: 50px 0;
+  }
+  .features {
+    padding: 50px 0;
+  }
+  .features__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features__content {
+    padding-top: 0;
+    text-align: center;
+  }
+  .features__content .features__btn {
+    display: flex;
+    justify-content: center;
+  }
+  .features__img-top1 {
+    top: 0;
+    margin-top: 70px;
+  }
+  .features__img-top2 {
+    top: 0;
+    margin-top: 70px;
+  }
+  .subscribe__title span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .subscribe form {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe form input {
+    margin-bottom: 15px;
+    max-width: 100%;
+    width: 95% !important;
+    margin-right: 0;
+  }
+  .subscribe form button {
+    width: 100%;
+  }
+  .sign-up {
+    padding: 50px 0;
+  }
+  .sign-in {
+    padding: 50px 0;
+  }
+  .forgot-password {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding-top: 25px;
+  }
+  .header__title h1 {
+    font-size: 35px;
+  }
+  .header__img {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  .header__img img {
+    max-width: 290px !important;
+  }
+  .features__img {
+    width: auto;
+  }
+  .features__img img {
+    max-width: 290px !important;
+  }
+  .subscribe form {
+    text-align: center;
+    justify-content: center;
+  }
+  .subscribe form input {
+    padding: 0 5px 0 7px;
+  }
+}

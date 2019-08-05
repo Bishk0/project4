@@ -1,0 +1,134 @@
+.features {
+  background: #F3F4F5;
+  padding: 100px 0;
+}
+
+.features__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.features__inner-reverse {
+  flex-direction: row-reverse;
+}
+
+.features__content {
+  padding-top: 100px;
+  max-width: 566px;
+  .features__title {
+    max-width: 536px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    span {
+      font-family: "GLYPHICONS Halflings", sans-serif;
+      font-size: 29px;
+      font-weight: 500;
+      color: #1b1f23;
+    }
+  }
+  .features__text {
+    max-width: 482px;
+    margin-bottom: 12px;
+    span {
+      color: #696f6f;
+      font-family: "GLYPHICONS Halflings", sans-serif;
+      font-size: 17px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.features__img {
+  max-width: 374px;
+  text-align: center;
+  img {
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+.features__btn {
+  .features__btn1 {
+    font-family: "GLYPHICONS Halflings", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: auto;
+    text-align: center;
+    padding: 10px 23px;
+    background: #dc554f;
+    border-radius: 4px;
+    border: 2px solid #dc554f;
+    font-size: 18px;
+    &:hover {
+      background: #cf3029;
+      border: 2px solid #cf3029;
+      transition: 0.5s;
+    }
+  }
+  .features__btn2-1 {
+    text-align: center;
+    padding: 10px 23px;
+    font-family: "GLYPHICONS Halflings", sans-serif;
+    text-decoration: none;
+    margin-right: 13px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    background: #dc554f;
+    border-radius: 4px;
+    border: 2px solid #dc554f;
+    &:hover {
+      background: #cf3029;
+      border: 2px solid #cf3029;
+      transition: 0.5s;
+    }
+  }
+  .features__btn2-2 {
+    text-decoration: none;
+    font-family: "GLYPHICONS Halflings", sans-serif;
+    display: block;
+    padding: 10px 23px;
+    background: transparent;
+    color: #dc554f;
+    font-size: 18px;
+    border: 2px solid #dc554f;
+    border-radius: 4px;
+    &:hover {
+      background: #cf3029;
+      color: #fff;
+      border: 2px solid #cf3029;
+      transition: 0.5s;
+    }
+  }
+  .features__btn3 {
+    display: block;
+    background: #dc554f;
+    text-align: center;
+    border-radius: 4px;
+    width: 180px;
+    height: 54px;
+    img{
+      width: 180px;
+      height: 54px;
+    }
+    &:hover {
+      background: #cf3029;
+      transition: 0.5s;
+    }
+  }
+}
+.features__btn-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.features__img-top1{
+  position: relative;
+  top: -40px;
+}
+.features__img-top2{
+  position: relative;
+  top: -80px;
+}

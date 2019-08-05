@@ -1,0 +1,57 @@
+.subscribe {
+  background: url("../img/bg-2.png") no-repeat center /cover;
+  padding: 100px 0;
+  text-align: center;
+  form {
+    padding: 20px 0;
+    button {
+      color: white;
+      background-color: #00b6ad;
+      border: 2px solid #00b6ad;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 18px;
+      padding: 10px 23px;
+      height: 45px;
+      &:hover{
+        background-color: #00837d;
+        border: 2px solid #00837d;
+        transition: 0.5s;
+      }
+    }
+    input {
+      height: 41px;
+      max-width: 300px;
+      margin-right: 3px;
+      padding: 0 12px;
+      font-size: 18px;
+      //line-height: 1.4;
+      font-family: "GLYPHICONS Halflings", sans-serif;
+      color: #696f6f;
+      background: #fff;
+      border: 2px solid #cccccc;
+      border-radius: 4px;
+    }
+  }
+}
+
+.subscribe__title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  span {
+    font-size: 36px;
+    color: #fff;
+    font-family: "GLYPHICONS Halflings", sans-serif;
+    font-weight: 500;
+  }
+}
+
+.subscribe__text {
+  margin-bottom: 12px;
+  span {
+    font-family: "GLYPHICONS Halflings", sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.4;
+  }
+}

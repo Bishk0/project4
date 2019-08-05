@@ -1,0 +1,137 @@
+@media (max-width: 1000px) {
+  .header{
+    padding: 50px 0;
+  }
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__inner{
+    flex-direction: column;
+    align-items: center;
+    .services__content{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  .footer__inner{
+    flex-direction: column;
+    align-items: center;
+    .footer__content{
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  .header__title{
+    h1{
+      font-size: 40px;
+    }
+  }
+  .header__text{
+    span{
+      font-size: 18px;
+    }
+  }
+  .services{
+    padding: 50px 0;
+  }
+  .subscribe{
+    padding: 50px 0;
+  }
+  .features{
+    padding: 50px 0;
+  }
+  .features__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .features__content{
+    padding-top: 0;
+    text-align: center;
+    .features__btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .features__img-top1{
+    top: 0;
+    margin-top: 70px;
+  }
+  .features__img-top2{
+    top: 0;
+    margin-top: 70px;
+  }
+  .subscribe__title{
+    span{
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 550px){
+  .subscribe{
+    form{
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input{
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 95% !important;
+        margin-right: 0;
+      }
+      button{
+        width: 100%;
+      }
+    }
+  }
+  .sign-up{
+    padding: 50px 0;
+  }
+  .sign-in{
+    padding: 50px 0;
+  }
+  .forgot-password{
+    padding: 50px 0;
+  }
+}
+@media (max-width: 400px){
+  .header{
+    padding-top: 25px;
+  }
+  .header__title{
+    h1{
+      font-size: 35px;
+    }
+  }
+  .header__img{
+    width: auto;
+    display: flex;
+    align-items: center;
+    img{
+      max-width: 290px !important;
+    }
+  }
+  .features__img{
+    width: auto;
+    img{
+      max-width: 290px !important;
+    }
+  }
+  .subscribe{
+    form{
+      text-align: center;
+      justify-content: center;
+      input{
+        //width: 95% !important;
+        padding: 0 5px 0 7px;
+      }
+      button{
+       // width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'GLYPHICONS Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.svg");
+}
+
+.fixed__nav {
+  position: fixed;
+  z-index: 5;
+  margin-top: -33px;
+  top: 50%;
+  right: 20px;
+  width: 10px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      height: 26px;
+      display: flex;
+      align-items: center;
+      a {
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: #e2e2e2;
+        position: relative;
+        &:hover {
+          background: #afafaf;
+          transition: 0.3s;
+          &:after {
+            position: absolute;
+            content: attr(data-title);
+            background: #313244;
+            color: #EBECED;
+            right: 20px;
+            padding: 3px 5px;
+            border-radius: 3px;
+            font-family: "GLYPHICONS Halflings", sans-serif;
+            font-size: 12px;
+            top: -5px;
+          }
+          &:before {
+            position: absolute;
+            content: '';
+            border: 5px solid transparent;
+            border-left: 5px solid #313244;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import 'header';
+@import "services";
+@import "features";
+@import "subscribe";
+@import "footer";
+@import "sign-in";
+@import "sign-up";
+@import "forgot-password";
+@import 'media-query';

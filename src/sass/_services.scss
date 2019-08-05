@@ -1,0 +1,45 @@
+.services{
+  padding: 100px 0;
+}
+.services__inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services__content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 294px;
+  &:last-child{
+    position: relative;
+    top: -3px;
+  }
+  .services__img{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    img{
+      width: 80px;
+      height: auto;
+    }
+  }
+  .services__title{
+    h4{
+      font-family: "GLYPHICONS Halflings", sans-serif;
+      margin: 12px 0;
+      font-size: 22px;
+      color: #1b1f23;
+      font-weight: 500;
+    }
+  }
+  .services__text{
+    span{
+      font-size: 17px;
+      font-family: "GLYPHICONS Halflings", sans-serif;
+      margin-bottom: 12px;
+      color: #696f6f;
+      line-height: 1.4;
+    }
+  }
+}
